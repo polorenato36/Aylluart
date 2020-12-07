@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+<title>Contenido3</title><link rel="stylesheet" href="estilos.css">
+<link rel="icon" href="nueva carpeta/395b380e-f5b4-48dc-ab9a-7bca9dbdff41 - copia.ico">
+
+<!-- Bootstrap -->
+<link rel="stylesheet" href="css/bootstrap.css">
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+      <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+  
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script src="/__/firebase/7.23.0/firebase-app.js"></script>
+  
+    <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+    <script src="/__/firebase/7.23.0/firebase-analytics.js"></script>
+  
+    <!-- Add Firebase products that you want to use -->
+    <script src="/__/firebase/7.23.0/firebase-auth.js"></script>
+    <script src="/__/firebase/7.23.0/firebase-firestore.js"></script>
+  
+<nav class="navbar navbar-default navbar-inverse">
+  <div class="container-fluid"> 
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a class="navbar-brand" href="#">Ayllu</a> </div>
+    
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a> </li>
+        <li><a href="#">Sartup</a> </li>
+        <li><a href="#">More</a> </li>
+        <li><a href="#">Galeria</a> </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Nosotros</a> </li>
+        <li><a href="#">Unete ya</a> </li>
+      </ul>
+    </div>
+
+    <div class="container">
+      <div class="row">
+    <div class="col-lg-4 col-md-6 col-sm-6">
+          <h2>Contact Us</h2>
+          <address>
+          <strong>Ayllu ART EXPORT Sociedad Anonima Cerrada.</strong><br>
+          <br>
+          Miraflores ,Lima PE<br>
+          <abbr title="Phone">P:</abbr> (+51) 2565961 leonardo.polo13@gmail.com
+          </address>
+          <h4>Social</h4>
+          <div class="row">
+            <div class="col-xs-2"><img class="img-circle btn-group-sm" src="Nueva carpeta/Compartido desde Lightroom mobile (6).jpg" alt=" width="323" height="323"></div>
+            <div class="col-md-6"><img src="Nueva carpeta/Compartido desde Lightroom mobile (9).jpg" alt="100" width="320" height="320" ></div>
+            <div class="col-lg-4"><img src="Nueva carpeta/Compartido desde Lightroom mobile (15).jpg" alt="120" width="320" height="320" ></div>
+            <div class="col-xs-2"><img src="Nueva carpeta/Compartido desde Lightroom mobile (16).jpg" alt="140" width="320" height="320"></div>        
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6">
+          <h2>Testimonials</h2>
+          <div class="media">
+            <div class="media-object"> <a href="#"> <img class="media-object" src="Nueva carpeta/DSC08578.JPG" alt="..."> </a> </div>
+            <div class="media-body">
+              <h4 class="media-heading">Media heading</h4>
+              <div class="media-object"> <a href="#"> <img class="media-object" src="Nueva carpeta/DSC08579.JPG" alt="..."> </a> </div>
+              Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. </div>
+          </div>
+          <div class="media">
+            <div class="media-left"> <a href="#"> <img class="media-object" src="img/35X35.gif" alt="..."> </a> </div>
+            <div class="media-body">
+              <h4 class="media-heading">Media heading</h4>
+              Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. </div>
+          </div>
+        </div>
+
+
+                                 <!-- TODO: Add SDKs for Firebase products that you want to use
+                                        https://firebase.google.com/docs/web/setup#available-libraries -->
+                                          <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-analytics.js"></script><script>  
+                                          <script>
+                                             // Initialize Firebase
+                                            var Config = {
+                                              apiKey: "AIzaSyDdOoSTDOf0LPBzok6x2e0yKKnB47FVLwg",
+                                              authDomain: "aylluexport.firebaseapp.com",
+                                              databaseURL: "https://aylluexport.firebaseio.com",
+                                              projectId: "aylluexport",
+                                              storageBucket: "aylluexport.appspot.com",
+                                              messagingSenderId: "528678239635",
+                                              appId: "1:528678239635:web:082bbc0315e3befdf53c66",
+                                               measurementId: "G-1DLBR804J2"
+                    };
+                    firebase.initializeApp(Config);
+                                        
+                    </script>
+                                                    <input id="email" type="email" placeholder="Ingresa Email">
+                                                    <input id="contrasena"type="password" placeholder="Ingresa Contraseña">
+                                                    <button onclick="registrar()"> enviar</button><script src="/__/firebase/7.23.0/firebase-app.js"></script>
+                      <script src="./angular.min.js"></script>   
+                </body>
+</html>
